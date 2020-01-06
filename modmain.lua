@@ -12,7 +12,7 @@ local redskull = "󰀀"
 
 local _ACTION_HAMMER = GLOBAL.ACTIONS.HAMMER.fn
 GLOBAL.ACTIONS.HAMMER.fn = function(act)
-    if act.doer and act.target then
+    if act.doer and act.target and act.target.components.workable.workleft == 1 then
         if GetModConfigData("announce_ornot") then
             GLOBAL.TheNet:Announce(redskull..common_string_warn..act.doer.name..common_string_hammer..act.target.name..redskull)
         end
