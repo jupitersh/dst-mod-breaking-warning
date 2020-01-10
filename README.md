@@ -12,7 +12,11 @@ BTW, it will also print the user id of the doer in the server log so that you ca
 
 ## Changelog
 
-**List of tweaks I made for version 1.1**
+**Version 1.3.0**
+
+- Add different notice method.
+
+**Version 1.1**
 
 - Add a option to turn off announcement, which means it only print it in the log file.
 

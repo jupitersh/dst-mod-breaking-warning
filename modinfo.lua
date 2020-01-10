@@ -1,7 +1,7 @@
 name = "Breaking Warning"
 description = "Announce when someone is hammering or light anything."
 author = "辣椒小皇纸"
-version = "1.2.1"
+version = "1.3.0"
 forumthread = ""
 
 api_version = 10
@@ -30,13 +30,14 @@ configuration_options =
 		default = "zh",
 	},
 	{
-		name = "announce_ornot",
-		label = "Announce",
+		name = "notice_method",
+		label = "Notice Method",
 		hover = "",
 		options =	{
-						{description = "Yes", data = true, hover = ""},
-						{description = "No", data = false, hover = ""},
+						{description = "Announce横幅公告", data = 1, hover = ""},
+                        {description = "System Message聊天栏", data = 2, hover = ""},
+                        {description = "None无", data = 0, hover = ""},
 					},
-		default = true,
+		default = 2,
 	},
 }
