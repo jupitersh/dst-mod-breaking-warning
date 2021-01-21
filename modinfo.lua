@@ -1,7 +1,7 @@
 name = "Breaking Warning"
 description = "Announce when someone is hammering or light anything."
 author = "辣椒小皇纸"
-version = "1.3.0"
+version = "1.3.1"
 forumthread = ""
 
 api_version = 10
